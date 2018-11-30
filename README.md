@@ -1,6 +1,6 @@
 # Lit
 
-![Logo](img/logo.png?raw=true "Logo")
+![Logo](img/logo-small.png?raw=true "Logo")
 
 Lit (Launch it) is a simple application launcher written in Java.
 
