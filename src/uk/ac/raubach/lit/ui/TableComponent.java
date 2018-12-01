@@ -126,9 +126,13 @@ public class TableComponent extends Composite
 			@Override
 			public Image getImage(Object element)
 			{
-				Icon icon = FileSystemView.getFileSystemView()
-										  .getSystemIcon(new File(((Config.Program) element).getPath()));
+				File file = new File(((Config.Program) element).getPath());
 
+				// First, try to get the icon from the file system
+				Icon icon = FileSystemView.getFileSystemView()
+										  .getSystemIcon(file);
+
+				// If there is an icon, use it
 				if (icon != null)
 				{
 					ImageData data = IconToImage.convertToSWT(icon);

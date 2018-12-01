@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<project name="Lit" basedir="." default="clean-build">
+<project name="lit" basedir="." default="clean-build">
 
 	<property name="src.dir" value="src"/>
 
